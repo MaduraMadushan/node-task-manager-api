@@ -5,11 +5,9 @@ const userRoutes = require('./routes/user')
 const taskRoutes = require('./routes/task')
 
 const app = express()
+
 app.use(express.json())
 app.use('/api/users', userRoutes)
 app.use('/api/tasks', taskRoutes)
 
 module.exports = app
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDJlZmZmYjQ5OGUxZjI2NmM1YzQzOWEiLCJpYXQiOjE1NjMzNjEyNzV9.38uRP9kJPnxGHZfb-rc1M_8IIH9tBLEMHRaN0kqEa_8
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDJlZmZmYjQ5OGUxZjI2NmM1YzQzOWEiLCJpYXQiOjE1NjMzNjE3NzJ9.nhdxoFp-kgRRIhMS1_ZJJQkH-AcIi-VRDuHUlr9aU2I
